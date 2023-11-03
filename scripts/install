@@ -155,6 +155,7 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/alsa.conf" --destination="/etc/modprobe.d/alsa-base.conf"
 
+mkdir -p "$install_dir/.config/pulse/"
 ynh_add_config --template="../conf/pulse.conf" --destination="$install_dir/.config/pulse/default.pa"
 
 chmod 400 "$install_dir/.config/pulse/default.pa"
@@ -208,3 +209,5 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$ap
 # END OF SCRIPT
 #=================================================
 ynh_script_progression --message="Installation of $app completed" --last
+
+

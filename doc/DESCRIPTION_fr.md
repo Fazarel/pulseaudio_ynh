@@ -1,0 +1,2 @@
+PulseAudio est un serveur de sons pour les systèmes d'exploitation POSIX, ce qui signifie qu'il s'agit d'un proxy pour vos applications sonores.
+PulseAudio effectue des opérations avancées sur les données sonores lorsqu'elles passent entre votre application et le matériel et permet notamment le transfert de l'audio vers une autre machine.
